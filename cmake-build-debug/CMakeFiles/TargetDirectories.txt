@@ -1,0 +1,3 @@
+/Users/koyot/CLionProjects/RailwaySim/cmake-build-debug/CMakeFiles/RailwaySim.dir
+/Users/koyot/CLionProjects/RailwaySim/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/koyot/CLionProjects/RailwaySim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
