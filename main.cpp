@@ -1,17 +1,25 @@
 #include <iostream>
-#include "RailNetwork.h"
+#include "Railway/RailNetwork.h"
+#include "Train/Train.h"
 
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
-    RailNetwork railNetwork = RailNetwork();
-    railNetwork.generateStations(100);
-    railNetwork.generateNetwork();
-    auto routes = railNetwork.getRoutes();
+    RailNetwork();
+    RailNetwork::generateStations(10);
+    RailNetwork::generateNetwork();
 
-    auto stations = railNetwork.getStations();
-    for(auto& route: routes) {
-        std::cout<<route<<"\n";
+    auto stations = RailNetwork::trainStations;
+    auto train = Train(stations[0]);
+    train.setPathToStation(stations[1]);
+    std::cout<<"Current station: "<<train.getCurrentStation()<<"\n";
+    std::cout<<"Destination: "<<stations[1]<<"\n";
+
+    auto path = train.getPath();
+
+    while(!path.empty()) {
+        std::cout<<path.top()<<"\n";
+        path.pop();
     }
 
     auto stop = std::chrono::high_resolution_clock::now();

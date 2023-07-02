@@ -52,23 +52,29 @@ build CMakeFiles/RailwaySim.dir/main.cpp.o: CXX_COMPILER__RailwaySim_Debug /User
   OBJECT_DIR = CMakeFiles/RailwaySim.dir
   OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir
 
-build CMakeFiles/RailwaySim.dir/TrainStation.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/TrainStation.cpp || cmake_object_order_depends_target_RailwaySim
-  DEP_FILE = CMakeFiles/RailwaySim.dir/TrainStation.cpp.o.d
+build CMakeFiles/RailwaySim.dir/Railway/TrainStation.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/Railway/TrainStation.cpp || cmake_object_order_depends_target_RailwaySim
+  DEP_FILE = CMakeFiles/RailwaySim.dir/Railway/TrainStation.cpp.o.d
   FLAGS = -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++20
   OBJECT_DIR = CMakeFiles/RailwaySim.dir
-  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir
+  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir/Railway
 
-build CMakeFiles/RailwaySim.dir/RailNetwork.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/RailNetwork.cpp || cmake_object_order_depends_target_RailwaySim
-  DEP_FILE = CMakeFiles/RailwaySim.dir/RailNetwork.cpp.o.d
+build CMakeFiles/RailwaySim.dir/Railway/RailNetwork.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/Railway/RailNetwork.cpp || cmake_object_order_depends_target_RailwaySim
+  DEP_FILE = CMakeFiles/RailwaySim.dir/Railway/RailNetwork.cpp.o.d
   FLAGS = -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++20
   OBJECT_DIR = CMakeFiles/RailwaySim.dir
-  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir
+  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir/Railway
 
-build CMakeFiles/RailwaySim.dir/Route.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/Route.cpp || cmake_object_order_depends_target_RailwaySim
-  DEP_FILE = CMakeFiles/RailwaySim.dir/Route.cpp.o.d
+build CMakeFiles/RailwaySim.dir/Railway/Route.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/Railway/Route.cpp || cmake_object_order_depends_target_RailwaySim
+  DEP_FILE = CMakeFiles/RailwaySim.dir/Railway/Route.cpp.o.d
   FLAGS = -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++20
   OBJECT_DIR = CMakeFiles/RailwaySim.dir
-  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir
+  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir/Railway
+
+build CMakeFiles/RailwaySim.dir/Train/Train.cpp.o: CXX_COMPILER__RailwaySim_Debug /Users/koyot/CLionProjects/RailwaySim/Train/Train.cpp || cmake_object_order_depends_target_RailwaySim
+  DEP_FILE = CMakeFiles/RailwaySim.dir/Train/Train.cpp.o.d
+  FLAGS = -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++20
+  OBJECT_DIR = CMakeFiles/RailwaySim.dir
+  OBJECT_FILE_DIR = CMakeFiles/RailwaySim.dir/Train
 
 
 # =============================================================================
@@ -78,7 +84,7 @@ build CMakeFiles/RailwaySim.dir/Route.cpp.o: CXX_COMPILER__RailwaySim_Debug /Use
 #############################################
 # Link the executable RailwaySim
 
-build RailwaySim: CXX_EXECUTABLE_LINKER__RailwaySim_Debug CMakeFiles/RailwaySim.dir/main.cpp.o CMakeFiles/RailwaySim.dir/TrainStation.cpp.o CMakeFiles/RailwaySim.dir/RailNetwork.cpp.o CMakeFiles/RailwaySim.dir/Route.cpp.o
+build RailwaySim: CXX_EXECUTABLE_LINKER__RailwaySim_Debug CMakeFiles/RailwaySim.dir/main.cpp.o CMakeFiles/RailwaySim.dir/Railway/TrainStation.cpp.o CMakeFiles/RailwaySim.dir/Railway/RailNetwork.cpp.o CMakeFiles/RailwaySim.dir/Railway/Route.cpp.o CMakeFiles/RailwaySim.dir/Train/Train.cpp.o
   FLAGS = -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0
   OBJECT_DIR = CMakeFiles/RailwaySim.dir
   POST_BUILD = :

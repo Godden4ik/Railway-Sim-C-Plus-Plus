@@ -8,6 +8,9 @@
 #include <queue>
 #include <functional>
 
+std::vector<Route> RailNetwork::routes;
+std::vector<TrainStation> RailNetwork::trainStations;
+
 RailNetwork::RailNetwork() = default;
 
 void RailNetwork::generateStations(int number) {
@@ -67,12 +70,12 @@ void RailNetwork::generateNetwork() {
     routes = mst;
 }
 
-std::vector<TrainStation> RailNetwork::getStations() {
-    return trainStations;
-}
-std::vector<Route> RailNetwork::getRoutes() {
-    return routes;
-}
+//std::vector<TrainStation> RailNetwork::getStations() {
+//    return trainStations;
+//}
+//std::vector<Route> RailNetwork::getRoutes() {
+//    return routes;
+//}
 
 
 

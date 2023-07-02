@@ -11,19 +11,18 @@
 #include <vector>
 
 class RailNetwork {
-private:
-    std::vector<TrainStation> trainStations;
-    std::vector<Route> routes;
-
 public:
+    static std::vector<Route> routes;
+    static std::vector<TrainStation> trainStations;
+
     RailNetwork();
 
-    void generateStations(int number);
+    static void generateStations(int number);
 
-    void generateNetwork();
+    static void generateNetwork();
 
-    std::vector<TrainStation> getStations();
-    std::vector<Route> getRoutes();
+    //std::vector<TrainStation> getStations();
+    //std::vector<Route> getRoutes();
 
 
 };

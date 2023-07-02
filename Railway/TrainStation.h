@@ -8,6 +8,7 @@
 
 #include <utility>
 #include <iostream>
+#include <functional>
 
 class TrainStation {
 private:
@@ -20,9 +21,11 @@ public:
     TrainStation(TrainStation const &otherStation);
     ~TrainStation();
     [[nodiscard]] std::pair<int, int> getCoordinates() const;
-    static double getDistance(const TrainStation& station1, const TrainStation& station2);
+    static double getDistance(const TrainStation& station1, const TrainStation& station2) ;
+    int getIndex() const;
 
     friend std::ostream& operator<<(std::ostream& os, const TrainStation& station);
+    friend bool operator==(const TrainStation& lhs, const TrainStation& rhs);
 };
 
 

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RailwaySim::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RailwaySim-Debug-6daf58b7130060590c1c.json",
+					"jsonFile" : "target-RailwaySim-Debug-05a5017d1365791bbca2.json",
 					"name" : "RailwaySim",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/koyot/CLionProjects/RailwaySim/cmake-build-debug",
+		"build" : "/Users/koyot/CLionProjects/RailwaySim/cmake-build-debug-coverage",
 		"source" : "/Users/koyot/CLionProjects/RailwaySim"
 	},
 	"version" : 
