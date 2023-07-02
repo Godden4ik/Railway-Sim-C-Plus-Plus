@@ -13,7 +13,7 @@ private:
     std::pair<TrainStation, TrainStation> route;
 public:
     Route(const TrainStation& station1, const TrainStation& station2);
-    double getLength() const;
+    [[nodiscard]] double getLength() const;
     std::pair<const TrainStation&, const TrainStation&> getStations();
 
     friend std::ostream& operator<<(std::ostream& os, const Route& route);

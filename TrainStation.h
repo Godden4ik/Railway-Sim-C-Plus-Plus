@@ -19,7 +19,7 @@ public:
     TrainStation(int x, int y);
     TrainStation(TrainStation const &otherStation);
     ~TrainStation();
-    std::pair<int, int> getCoordinates() const;
+    [[nodiscard]] std::pair<int, int> getCoordinates() const;
     static double getDistance(const TrainStation& station1, const TrainStation& station2);
 
     friend std::ostream& operator<<(std::ostream& os, const TrainStation& station);

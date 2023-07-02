@@ -3,7 +3,6 @@
 //
 
 #include "Route.h"
-#include <cmath>
 
 Route::Route(const TrainStation& station1, const TrainStation& station2):
     route(std::make_pair(station1, station2)) {}

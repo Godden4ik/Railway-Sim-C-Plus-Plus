@@ -1,12 +1,11 @@
 #include <iostream>
-#include "TrainStation.h"
 #include "RailNetwork.h"
 
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
     RailNetwork railNetwork = RailNetwork();
-    railNetwork.generateStations(1000);
+    railNetwork.generateStations(100);
     railNetwork.generateNetwork();
     auto routes = railNetwork.getRoutes();
 

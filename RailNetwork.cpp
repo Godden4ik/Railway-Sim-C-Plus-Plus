@@ -8,7 +8,7 @@
 #include <queue>
 #include <functional>
 
-RailNetwork::RailNetwork() {}
+RailNetwork::RailNetwork() = default;
 
 void RailNetwork::generateStations(int number) {
     std::set<std::pair<int, int>> coordSet;
@@ -34,7 +34,7 @@ void RailNetwork::generateStations(int number) {
 void RailNetwork::generateNetwork() {
     std::vector<bool> visited(trainStations.size(), false); // Keep track of visited stations
     std::vector<Route> mst; // Minimum spanning tree
-    std::priority_queue<Route, std::vector<Route>, std::greater<Route>> pq; // Priority queue for routes
+    std::priority_queue<Route, std::vector<Route>, std::greater<>> pq; // Priority queue for routes
 
     visited[0] = true; // Start with the first station
     int visitedCount = 1;

@@ -12,8 +12,7 @@ TrainStation::TrainStation(int x, int y)
     :x(x), y(y), index(currentIndex++)
     {}
 
-TrainStation::TrainStation(TrainStation const &otherStation)
-    :x(otherStation.x), y(otherStation.y), index(otherStation.index){}
+TrainStation::TrainStation(TrainStation const &otherStation) = default;
 
 TrainStation::~TrainStation()= default;
 
